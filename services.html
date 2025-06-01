@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - My Awesome Demo Site</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://assets.adobedtm.com/b571b7f9ddbe/d3e531d2d643/launch-b4edbf5eb0ee-development.min.js" async></script>
+    <script src="https://assets.adobedtm.com/b571b7f9ddbe/af72933d41a8/launch-abc2a200ae34-development.min.js" async></script>
 </head>
 <body>
     <header>
@@ -22,29 +22,7 @@
         <h1>Services</h1>
         <p>This is the service page content.</p>
     </main>
-    <script>
-  // Ensure alloy is available
-  if (typeof alloy === 'function') {
-    alloy("sendEvent", {
-      // XDM data for the page view
-      "xdm": {
-        "eventType": "web.webpagedetails.pageViews",
-        "web": {
-          "webPageDetails": {
-            "name": document.title, // Example: Page Title
-            "URL": window.location.href
-          }
-        }
-      }
-    }).then(function(result) {
-      console.log("Adobe event sent:", result);
-    }).catch(function(error) {
-      console.error("Error sending Adobe event:", error);
-    });
-  } else {
-    console.warn("Alloy (Adobe Web SDK) not loaded yet.");
-  }
-</script>
+    
     <footer>
         <p>&copy; 2025 Your Name</p>
     </footer>
