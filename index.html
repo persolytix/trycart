@@ -22,29 +22,7 @@
         <h1>Welcome to my demo hub </h1>
         <p>This is the homepage.</p>
     </main>
-    <script>
-  // Ensure alloy is available
-  if (typeof alloy === 'function') {
-    alloy("sendEvent", {
-      // XDM data for the page view
-      "xdm": {
-        "eventType": "web.webpagedetails.pageViews",
-        "web": {
-          "webPageDetails": {
-            "name": document.title, // Example: Page Title
-            "URL": window.location.href
-          }
-        }
-      }
-    }).then(function(result) {
-      console.log("Adobe event sent:", result);
-    }).catch(function(error) {
-      console.error("Error sending Adobe event:", error);
-    });
-  } else {
-    console.warn("Alloy (Adobe Web SDK) not loaded yet.");
-  }
-</script>
+   
     <footer>
         <p>&copy; 2025 agilani</p>
     </footer>
